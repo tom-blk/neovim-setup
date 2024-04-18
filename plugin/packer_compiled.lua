@@ -74,6 +74,17 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["CopilotChat.nvim"] = {
+    config = { "\27LJ\2\n\127\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0]Please update the remote plugins by running ':UpdateRemotePlugins', then restart Neovim.\vnotify\bvimô\3\1\0\6\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0033\4\6\0=\4\a\0034\4\3\0005\5\b\0>\5\1\0045\5\t\0>\5\2\4=\4\n\3B\1\2\1K\0\1\0\17dependencies\1\2\0\0\26nvim-lua/plenary.nvim\1\2\0\0\"nvim-telescope/telescope.nvim\nbuild\0\fprompts\1\0\4\nTestsKBriefly explain how the selected code works, then generate unit tests.\vReview?Review the following code and provide concise suggestions.\fExplain.Explain how it works by English language.\rRefactor:Refactor the code to improve clarity and readability.\1\0\4\nproxy\v******\nevent\rVeryLazy\14show_help\byes\ndebug\2\nsetup\16CopilotChat\frequire\0" },
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/CopilotChat.nvim",
+    url = "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -117,6 +128,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: CopilotChat.nvim
+time([[Config for CopilotChat.nvim]], true)
+try_loadstring("\27LJ\2\n\127\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0]Please update the remote plugins by running ':UpdateRemotePlugins', then restart Neovim.\vnotify\bvimô\3\1\0\6\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0033\4\6\0=\4\a\0034\4\3\0005\5\b\0>\5\1\0045\5\t\0>\5\2\4=\4\n\3B\1\2\1K\0\1\0\17dependencies\1\2\0\0\26nvim-lua/plenary.nvim\1\2\0\0\"nvim-telescope/telescope.nvim\nbuild\0\fprompts\1\0\4\nTestsKBriefly explain how the selected code works, then generate unit tests.\vReview?Review the following code and provide concise suggestions.\fExplain.Explain how it works by English language.\rRefactor:Refactor the code to improve clarity and readability.\1\0\4\nproxy\v******\nevent\rVeryLazy\14show_help\byes\ndebug\2\nsetup\16CopilotChat\frequire\0", "config", "CopilotChat.nvim")
+time([[Config for CopilotChat.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
