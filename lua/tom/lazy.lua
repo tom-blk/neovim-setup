@@ -33,20 +33,24 @@ local plugins = {
   	},
 	{
 		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-		config = function () 
-			local configs = require("nvim-treesitter.configs")
+		config = function()
+			require("nvim-treesitter.configs").setup({
+				ensure_installed = {"c", "lua", "vim", "vimdoc", "query", "typescript", "tsx", "javascript", "css", "rust", "html", "json", "toml", "dockerfile", "bash", "sql", "scss"},
+				
+				auto_install = true,
 
-			configs.setup({
-				ensure_installed = { "rust", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "css", "sql", "json", "typescript" },
-				sync_install = false,
-				highlight = { enable = true },
-				indent = { enable = true },  
+				highlight = {
+					enable = true,
+				},
+
+
+				indent = {
+					enable = true,
+				},
 			})
-		end
+		end,
 	}
 }
-
 require('lazy').setup(plugins, opts)
 
 
