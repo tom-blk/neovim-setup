@@ -12,10 +12,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	'wbthomason/packer.nvim',
 	'ThePrimeagen/harpoon',
 	'mbbill/undotree',
 	'github/copilot.vim',
+	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+	{'neovim/nvim-lspconfig'},
+	{'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/nvim-cmp'},
+	{'L3MON4D3/LuaSnip'},
+	{ 'windwp/nvim-autopairs', event = "InsertEnter", config = true },
 	{ 'nvim-telescope/telescope.nvim', tag = '0.1.6', dependencies = { 'nvim-lua/plenary.nvim' }},
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
 	{
@@ -41,7 +46,9 @@ local plugins = {
 					enable = true,
 				},
 
-
+				autotag = {
+					enable = true,
+				},
 				indent = {
 					enable = true,
 				},
