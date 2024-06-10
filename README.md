@@ -1,2 +1,2 @@
 # neovim-setup
-My neovim setup, partially ripped off from ThePrimeagen. Use it if you want to.
+My neovim setup. Use it if you want to.
