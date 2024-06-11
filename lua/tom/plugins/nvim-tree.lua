@@ -30,6 +30,7 @@ return{
             git = {
                 ignore = false,
             },
+            on_attach = on_attach,
         })
     end
 }
