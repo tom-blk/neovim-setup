@@ -10,7 +10,6 @@ return{
 				highlight = {
 					enable = true,
 				},
--- codeium try to autocomplete 
 				autotag = {
 					enable = true,
 				},
